@@ -4,6 +4,12 @@ package ch9;
  * You have a conditional that chooses different behavior depending on the type of an object
  * 
  * Move each leg of the conditional to an overriding method in a subclass. Make the original method abstract
+ * 
+ * - Before do this refactoring, need to have the necessary inheritance structure. You can create this
+ *   structure by ReplaceTypeCodeWithSubclasses or ReplaceTypeCodeWithStateOrStrategy
+ * 
+ * - If several case statements are switching on the same type code, you only need to create one inheritance
+ *   structure for that type code
  */
 class Employee {
   private EmployeeType _type;

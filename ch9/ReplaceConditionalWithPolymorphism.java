@@ -41,7 +41,7 @@ abstract class EmployeeType {
 class EmployeeRefactored {
   private EmployeeTypeRefactored _type;
 
-  Employee(int type) {
+  EmployeeRefactored(int type) {
     _type = type;
   }
 

@@ -33,3 +33,22 @@ The code might not be executed, the main purpose is to interpret the theory of r
 - [Remove Middle Man](./ch7/RemoveMiddleMan.java)
 - [Introduce Foreign Method](./ch7/IntroduceForeignMethod.java)
 - [Introduce Local Extension](./ch7/IntroduceLocalExtension.java)
+
+### Organizing Data
+
+- [Self Encapsulate Field](./ch8/EncapsulateField.java)
+- [Replace Data Value with Object](./ch8/ReplaceDataValueWithObject.java)
+- [Change Value to Reference](./ch8/ChangeValueToReference.java)
+- [Change Reference to Value](./ch8/ChangeReferenceToValue.java)
+- [Replace Array with Object](./ch8/ReplaceArrayWithObject.java)
+- [Duplicate Observed Data](./ch8/DuplicateObservedData.java)
+- [Change Unidirectional Association to Bidirectional](./ch8/ChangeUnidirectionalAssociationToBidirectional.java)
+- [Change Bidirectional Association to Unidirectional](./ch8/ChangeBidirectionalAssociationToUnidirectional.java)
+- [Replace Magic Number with Symbolic Constant](./ch8/ReplaceMagicNumberWithSymbolicConstant.java)
+- [Encapsulate Field](./ch8/EncapsulateField.java)
+- [Encapsulate Collection](./ch8/EncapsulateCollection.java)
+- [Replace Record with Data Class](./ch8/ReplaceRecordWithDataClass.java)
+- [Replace Type Code with Class](./ch8/ReplaceTypeCodeWithClass.java)
+- [Replace Type Code with subclass](./ch8/ReplaceTypeCodeWIthSubclasses.java)
+- [Replace Type Code with State/Strategy](./ch8/ReplaceTypeCodeWithStateOrStrategy.java)
+- [Replace Subclass with Fields](./ch8/ReplaceSubclassWithFields.java)

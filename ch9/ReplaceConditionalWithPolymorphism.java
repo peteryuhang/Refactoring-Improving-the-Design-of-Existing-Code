@@ -14,12 +14,12 @@ package ch9;
 class Employee {
   private EmployeeType _type;
 
-  Employee(int type) {
+  Employee(EmployeeType type) {
     _type = type;
   }
 
   public int getType() {
-    return _type;
+    return _type.getTypeCode();
   }
 
   public int payAmount() {
@@ -47,7 +47,7 @@ abstract class EmployeeType {
 class EmployeeRefactored {
   private EmployeeTypeRefactored _type;
 
-  EmployeeRefactored(int type) {
+  EmployeeRefactored(EmployeeTypeRefactored type) {
     _type = type;
   }
 

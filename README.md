@@ -22,3 +22,14 @@ The code might not be executed, the main purpose is to interpret the theory of r
 - [Remove Assignments to Parameters](./ch6/RemoveAssignmentsToParameters.java)
 - [Replace Method with Method objects](./ch6/ReplaceMethodWithMethodObject.java)
 - [Substitute Algorithm](./ch6/SubstituteAlgorithm.java)
+
+### Moving Features Between Objects
+
+- [Move Method](./ch7/MoveMethod.java)
+- [Move Field](./ch7/MoveField.java)
+- [Extract Class](./ch7/ExtractClass.java)
+- [Inline Class](./ch7/InlineClass.java)
+- [Hide Delegate](./ch7/HideDelegate.java)
+- [Remove Middle Man](./ch7/RemoveMiddleMan.java)
+- [Introduce Foreign Method](./ch7/IntroduceForeignMethod.java)
+- [Introduce Local Extension](./ch7/IntroduceLocalExtension.java)

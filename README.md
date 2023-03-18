@@ -36,7 +36,7 @@ The code might not be executed, the main purpose is to interpret the theory of r
 
 ### Organizing Data
 
-- [Self Encapsulate Field](./ch8/EncapsulateField.java)
+- [Self Encapsulate Field](./ch8/SelfEncapsulateField.java)
 - [Replace Data Value with Object](./ch8/ReplaceDataValueWithObject.java)
 - [Change Value to Reference](./ch8/ChangeValueToReference.java)
 - [Change Reference to Value](./ch8/ChangeReferenceToValue.java)

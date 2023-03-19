@@ -52,3 +52,14 @@ The code might not be executed, the main purpose is to interpret the theory of r
 - [Replace Type Code with subclass](./ch8/ReplaceTypeCodeWIthSubclasses.java)
 - [Replace Type Code with State/Strategy](./ch8/ReplaceTypeCodeWithStateOrStrategy.java)
 - [Replace Subclass with Fields](./ch8/ReplaceSubclassWithFields.java)
+
+### Simplifying Conditional Expressions
+
+- [Decompose Conditional](./ch9/DecomposeConditional.java)
+- [Consolidate Conditional Expression](./ch9/ConsolidateConditionalExpression.java)
+- [Consolidate Duplicate Conditional Fragments](./ch9/ConsolidateDuplicateConditionalFragments.java)
+- [Remove Control Flag](./ch9/RemoveControlFlag.java)
+- [Replace Nested Conditional with Guard Clauses](./ch9/ReplaceNestedConditionalWithGuardClauses.java)
+- [Replace Conditional with Polymorphism](./ch9/ReplaceConditionalWithPolymorphism.java)
+- [Introduce Null Object](./ch9/IntroduceNullObject.java)
+- [Introduce Assertion](./ch9/IntroduceAssertion.java)

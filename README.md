@@ -63,3 +63,14 @@ The code might not be executed, the main purpose is to interpret the theory of r
 - [Replace Conditional with Polymorphism](./ch9/ReplaceConditionalWithPolymorphism.java)
 - [Introduce Null Object](./ch9/IntroduceNullObject.java)
 - [Introduce Assertion](./ch9/IntroduceAssertion.java)
+
+### Making Method Calls Simpler
+
+- [Rename Method](./ch10/RenameMethod.java)
+- [Add Parameter](./ch10/AddParameter.java)
+- [Remove Parameter](./ch10/RemoveParameter.java)
+- [Separate Query from Modifier](./ch10/SeparateQueryFromModifier.java)
+- [ParameterizeMethod](./ch10/ParameterizeMethod.java)
+- [ReplaceParameterWithExplicitMethods](./ch10/ReplaceParameterWithExplicitMethods.java)
+- [Preserve Whole Object](./ch10/PreserveWholeObject.java)
+- [Replace Parameter with Method](./ch10/ReplaceParameterWithMethod.java)

@@ -1,6 +1,5 @@
 package ch7;
 
-
 /* 
  * A method is, or will be, using or used by more features of
  * another class than the class on which it is defined
@@ -21,18 +20,21 @@ package ch7;
 public class MoveMethod {
   private AccountType _type;
   private int _daysOverdrawn;
+
   double overdraftCharge() {
     if (_type.isPremium()) {
       double result = 10;
-      if (_daysOverdrawn > 7) result += (_daysOverdrawn - 7) * 0.85;
+      if (_daysOverdrawn > 7)
+        result += (_daysOverdrawn - 7) * 0.85;
       return result;
-    }
-    else return _daysOverdrawn * 1.75;
+    } else
+      return _daysOverdrawn * 1.75;
   }
 
   double bankCharge() {
     double result = 4.5;
-    if (_daysOverdrawn > 0) result += overdraftCharge();
+    if (_daysOverdrawn > 0)
+      result += overdraftCharge();
     return result;
   }
 }
@@ -48,7 +50,8 @@ class MoveMethodRefactored {
 
   double bankCharge() {
     double result = 4.5;
-    if (_daysOverdrawn > 0) result += _type.overdraftCharge(_daysOverdrawn);
+    if (_daysOverdrawn > 0)
+      result += _type.overdraftCharge(_daysOverdrawn);
     return result;
   }
 }
@@ -57,9 +60,10 @@ class AccountTypeRefactored {
   double overdraftCharge(int daysOverdrawn) {
     if (isPremium()) {
       double result = 10;
-      if (daysOverdrawn > 7) result += (daysOverdrawn - 7) * 0.85;
+      if (daysOverdrawn > 7)
+        result += (daysOverdrawn - 7) * 0.85;
       return result;
-    }
-    else return daysOverdrawn * 1.75;
+    } else
+      return daysOverdrawn * 1.75;
   }
 }

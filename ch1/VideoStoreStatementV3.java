@@ -4,7 +4,6 @@
  *    Renaming things in the amountFor function (variable name are a key to clear code)
  */
 
-
 package ch1;
 
 import java.util.Enumeration;

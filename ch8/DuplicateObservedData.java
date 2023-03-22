@@ -83,7 +83,7 @@ class InteravalWindowRefactored extends Frame implements Observer {
   public InteravalWindowRefactored() {
     _subject = new Interval();
     _subject.addObserver(this);
-    
+
     // the call to update ensure that duplicate data in the domain class
     update(_subject, null);
   }

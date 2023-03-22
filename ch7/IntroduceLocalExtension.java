@@ -25,31 +25,33 @@ class MfDateSub extends Date {
 
   public Date nextDay(Date arg) {
     return new Date(
-      // re-use father's method
-      getYear(),
-      getMonth(),
-      getDate() + 1
-    );
+        // re-use father's method
+        getYear(),
+        getMonth(),
+        getDate() + 1);
   }
 }
 
-
 /*
- * A particular problem with using wrappers is how to deal with methods that take an
+ * A particular problem with using wrappers is how to deal with methods that
+ * take an
  * original as an argument, such as
  * 
- * public boolean equals(Date arg) 
+ * public boolean equals(Date arg)
  * 
- * normally, java user will assume a.equals(b) then b.equals(a), but wrapper only can do
+ * normally, java user will assume a.equals(b) then b.equals(a), but wrapper
+ * only can do
  * it in one direction because original Date can not be modified.
  * 
- * In this situation, need to expose the fact that this class is wrapping class by rename the method
+ * In this situation, need to expose the fact that this class is wrapping class
+ * by rename the method
  * 
  * public boolean equalsDate(Date arg)
  */
 
 class MfDateWrap {
   private Date _original;
+
   public MfDateWrap(String dateString) {
     _original = new Date(dateString);
   }
@@ -64,8 +66,10 @@ class MfDateWrap {
   }
 
   public boolean equals(Object arg) {
-    if (this == arg) return true;
-    if (! (arg instanceof MfDateWrap)) return false;
+    if (this == arg)
+      return true;
+    if (!(arg instanceof MfDateWrap))
+      return false;
     MfDateWrap other = ((MfDateWrap) arg);
     return (_original.equals(other._original));
   }
@@ -74,10 +78,9 @@ class MfDateWrap {
 
   public Date nextDay(Date arg) {
     return new Date(
-      // re-use father's method
-      getYear(),
-      getMonth(),
-      getDate() + 1
-    );
+        // re-use father's method
+        getYear(),
+        getMonth(),
+        getDate() + 1);
   }
 }

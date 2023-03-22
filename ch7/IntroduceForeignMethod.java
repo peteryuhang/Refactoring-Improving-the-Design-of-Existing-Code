@@ -1,6 +1,5 @@
 package ch7;
 
-
 /* 
  * A server class you are using needs an additional method, but you can't modify the class
  * 
@@ -15,10 +14,9 @@ package ch7;
 class IntroduceForeignMethod {
   public Date getDate() {
     Date newStart = new Date(
-      previousEnd.getYear(),
-      previousEnd.getMonth(),
-      previousEnd.getDate() + 1
-    );
+        previousEnd.getYear(),
+        previousEnd.getMonth(),
+        previousEnd.getDate() + 1);
 
     return newStart;
   }
@@ -32,9 +30,8 @@ class IntroduceForeignMethod {
   private static Date nextDay(Date arg) {
     // foreign method, should be on Date
     return new Date(
-      previousEnd.getYear(),
-      previousEnd.getMonth(),
-      previousEnd.getDate() + 1
-    );
+        previousEnd.getYear(),
+        previousEnd.getMonth(),
+        previousEnd.getDate() + 1);
   }
 }

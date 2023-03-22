@@ -4,7 +4,6 @@
  *     thisAmount inside the statement method is redundant, eliminate it
  */
 
-
 package ch1;
 
 import java.util.Enumeration;

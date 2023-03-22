@@ -1,6 +1,5 @@
 package ch7;
 
-
 /* 
  * A client is calling a delegate class of an object
  * 
@@ -12,7 +11,7 @@ package ch7;
  */
 class Person {
   Department _department;
-  
+
   public Department getDepartment() {
     return _department;
   }
@@ -26,7 +25,7 @@ class Department {
   private String _chargeCode;
   private Person _manager;
 
-  public Department (Person manager) {
+  public Department(Person manager) {
     _manager = manager;
   }
 
@@ -37,7 +36,7 @@ class Department {
 
 class PersonRefactored {
   Department _department;
-  
+
   public Department getDepartment() {
     return _department;
   }
@@ -55,7 +54,7 @@ class Department {
   private String _chargeCode;
   private Person _manager;
 
-  public Department (Person manager) {
+  public Department(Person manager) {
     _manager = manager;
   }
 

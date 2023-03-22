@@ -1,6 +1,5 @@
 package ch7;
 
-
 /* 
  * You have one class doing work that should be done by two
  * 

@@ -22,11 +22,10 @@ class Currency {
     return _code;
   }
 
-  private Currency (String code) {
+  private Currency(String code) {
     _code = code;
   }
 }
-
 
 class CurrencyRefactored {
   private String _code;
@@ -40,7 +39,8 @@ class CurrencyRefactored {
   }
 
   public boolean equals(Object arg) {
-    if (! (arg instanceof CurrencyRefactored)) return false;
+    if (!(arg instanceof CurrencyRefactored))
+      return false;
     CurrencyRefactored other = (CurrencyRefactored) arg;
     return (_code.equals(other._code));
   }

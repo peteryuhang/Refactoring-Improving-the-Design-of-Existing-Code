@@ -5,7 +5,6 @@
  *    (in most cases a method should be on the object whose data it uses)
  */
 
-
 package ch1;
 
 import java.util.Enumeration;

@@ -33,7 +33,8 @@ class ReplaceMethodWithMethodObjectRefactored {
   private int importantValue2;
   private int importantValue3;
 
-  ReplaceMethodWithMethodObjectRefactored(ReplaceMethodWithMethodObject source, int inputValArg, int quantityArg, int yearToDateArg) {
+  ReplaceMethodWithMethodObjectRefactored(ReplaceMethodWithMethodObject source, int inputValArg, int quantityArg,
+      int yearToDateArg) {
     _account = source;
     inputVal = inputValArg;
     quantity = quantityArg;

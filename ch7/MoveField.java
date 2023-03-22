@@ -1,6 +1,5 @@
 package ch7;
 
-
 /* 
  * A field is, or will be, used by another class more than the class on 
  * which it is defined

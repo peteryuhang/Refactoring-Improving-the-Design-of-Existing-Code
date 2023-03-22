@@ -1,6 +1,5 @@
 package ch9;
 
-
 /* 
  * You have a sequence of conditional tests with the same result
  * 
@@ -14,9 +13,12 @@ package ch9;
  */
 class ConsolidateConditionalExpressionOrs {
   public double client() {
-    if (_seniority < 2) return 0;
-    if (_monthsDisabled > 12) return 0;
-    if (_isPartTime) return 0;
+    if (_seniority < 2)
+      return 0;
+    if (_monthsDisabled > 12)
+      return 0;
+    if (_isPartTime)
+      return 0;
     // ...
   }
 }
@@ -32,7 +34,8 @@ class ConsolidateConditionalExpressionAnds {
 
 class ConsolidateConditionalExpressionOrsRefactored {
   public double client() {
-    if (isNotEligibleForDisability()) return 0;
+    if (isNotEligibleForDisability())
+      return 0;
     // ...
   }
 

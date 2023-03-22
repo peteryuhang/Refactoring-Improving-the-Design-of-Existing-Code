@@ -5,7 +5,6 @@
  *    (so when add new behavior, the change is much easier to make)
  */
 
-
 package ch1;
 
 import java.util.Enumeration;
@@ -13,7 +12,9 @@ import java.util.Vector;
 
 abstract class Price {
   abstract int getPriceCode();
+
   abstract double getCharge(int daysRented);
+
   abstract int getFrequentRenterPoints(int daysRented);
 }
 

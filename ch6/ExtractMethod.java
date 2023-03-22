@@ -37,8 +37,9 @@ public class ExtractMethod {
   void printOwingRefactored() {
     // No Local Variables
     printBanner();
-    // Reassigning a Local Variable - variable not been used after the code is extracted then just return
-    //                                variable been used afterward, need to return
+    // Reassigning a Local Variable - variable not been used after the code is
+    // extracted then just return
+    // variable been used afterward, need to return
     double outstanding = getOutstanding();
     // Using Local Variables
     printDetails(outstanding);

@@ -4,7 +4,6 @@
  *     do the similar thing for frequentRenterPoints inside statement method
  */
 
-
 package ch1;
 
 import java.util.Enumeration;

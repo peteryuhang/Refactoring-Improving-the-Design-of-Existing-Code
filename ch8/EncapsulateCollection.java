@@ -59,7 +59,8 @@ class Client {
     int count = 0;
     while (iter.hasNext()) {
       Course each = (Course) iter.next();
-      if (each.isAdvanced()) count++;
+      if (each.isAdvanced())
+        count++;
     }
     return count;
   }
@@ -79,7 +80,7 @@ class PersonRefactored {
   private Set _courses = new HashSet();
 
   public Set getCourses() {
-    // return (Vector) _courses.clone();   for java 1.1
+    // return (Vector) _courses.clone(); for java 1.1
     return Collections.unmodifiableSet(_courses);
   }
 
@@ -105,7 +106,8 @@ class PersonRefactored {
     int count = 0;
     while (iter.hasNext()) {
       CourseRefactored each = (CourseRefactored) iter.next();
-      if (each.isAdvanced()) count++;
+      if (each.isAdvanced())
+        count++;
     }
     return count;
   }
@@ -126,17 +128,12 @@ class ClientRefactored {
   }
 
   // public static int getAdvancedCourse(PersonRefactored p) {
-  //   Iterator<E> iter = p.getCourses().iterator();
-  //   int count = 0;
-  //   while (iter.hasNext()) {
-  //     CourseRefactored each = (CourseRefactored) iter.next();
-  //     if (each.isAdvanced()) count++;
-  //   }
-  //   return count;
+  // Iterator<E> iter = p.getCourses().iterator();
+  // int count = 0;
+  // while (iter.hasNext()) {
+  // CourseRefactored each = (CourseRefactored) iter.next();
+  // if (each.isAdvanced()) count++;
+  // }
+  // return count;
   // }
 }
-
-
-
-
-

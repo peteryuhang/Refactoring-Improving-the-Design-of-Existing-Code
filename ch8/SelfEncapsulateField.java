@@ -1,6 +1,5 @@
 package ch8;
 
-
 /* 
  * You are accessing a field directly, but the coupling to the field is become awkward
  * 
@@ -64,6 +63,7 @@ class IntRangeRefactored {
 
 class CappedRange extends IntRangeRefactored {
   private int _cap;
+
   CappedRange(int low, int high, int cap) {
     super(low, high);
     _cap = cap;

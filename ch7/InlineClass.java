@@ -1,6 +1,5 @@
 package ch7;
 
-
 /* 
  * A class isn't doing very much
  * 
@@ -54,4 +53,3 @@ class PersonRefactored {
     return ("(" + _areaCode + ") " + _number);
   }
 }
-

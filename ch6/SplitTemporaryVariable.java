@@ -42,7 +42,8 @@ public class SplitTemporaryVariable {
   double getDistanceTravelledRefactoredMore(int time) {
     double result = 0.5 * getPrimaryAcc() * getPrimaryTime(time) * getPrimaryTime(time);
     if (getSecondaryTime() > 0) {
-      result += getPrimaryVel() * getSecondaryTime(time) + 0.5 * getSecondaryAcc() * getSecondaryTime(time) * getSecondaryTime(time);
+      result += getPrimaryVel() * getSecondaryTime(time)
+          + 0.5 * getSecondaryAcc() * getSecondaryTime(time) * getSecondaryTime(time);
     }
 
     return result;

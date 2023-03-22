@@ -4,7 +4,6 @@
  *      2. Not convenient for adding new feature(s)
  */
 
-
 package ch1;
 
 import java.util.Enumeration;

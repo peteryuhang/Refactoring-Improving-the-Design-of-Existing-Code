@@ -1,6 +1,5 @@
 package ch9;
 
-
 /* 
  * A section of code assumes something about the state of program
  * 
@@ -16,9 +15,7 @@ class Employee {
   private Project _primaryProject;
 
   public double getExpenseLimit() {
-    return (_expenseLimit != NULL_EXPENSE) ?
-          _expenseLimit :
-          _primaryProject.getMemberExpenseLimit();
+    return (_expenseLimit != NULL_EXPENSE) ? _expenseLimit : _primaryProject.getMemberExpenseLimit();
   }
 
   public boolean withinLimit(double expenseAmount) {
@@ -33,9 +30,7 @@ class EmployeeRefactored {
 
   public double getExpenseLimit() {
     Assert.isTrue(_expenseLimit != NULL_EXPENSE || _primaryProject != null);
-    return (_expenseLimit != NULL_EXPENSE) ?
-          _expenseLimit :
-          _primaryProject.getMemberExpenseLimit();
+    return (_expenseLimit != NULL_EXPENSE) ? _expenseLimit : _primaryProject.getMemberExpenseLimit();
   }
 
   public boolean withinLimit(double expenseAmount) {

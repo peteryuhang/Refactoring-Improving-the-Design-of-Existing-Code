@@ -12,9 +12,10 @@ class Person {
 }
 
 class PersonRefactored {
-  // @Deprecated  // Mark it as Deprecated if it is part of the interface and cannot remove it
+  // @Deprecated // Mark it as Deprecated if it is part of the interface and
+  // cannot remove it
   // public String getTelephoneNumber() {
-  //   return ("(" + _officeAreaCode + ") " + _officeNumber);
+  // return ("(" + _officeAreaCode + ") " + _officeNumber);
   // }
 
   public String getOfficeTelephoneNumber() {

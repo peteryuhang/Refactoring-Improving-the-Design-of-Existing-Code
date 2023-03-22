@@ -32,8 +32,8 @@ class Order {
   }
 }
 
-class Customer {}
-
+class Customer {
+}
 
 class OrderRefactored {
   private CustomerRefactored _customer;
@@ -44,9 +44,11 @@ class OrderRefactored {
 
   // modifier of the controlling side
   public void setCustomer(CustomerRefactored arg) {
-    if (_customer != null) _customer.friendOrders().remove(this);
+    if (_customer != null)
+      _customer.friendOrders().remove(this);
     _customer = arg;
-    if (_customer != null) _customer.friendOrders().add(this);
+    if (_customer != null)
+      _customer.friendOrders().add(this);
   }
 }
 
@@ -64,7 +66,6 @@ class CustomerRefactored {
     arg.setCustomer(this);
   }
 }
-
 
 class OrderRefactoredManyToMany {
   private Set _customers = new HashSet();
@@ -102,5 +103,3 @@ class CustomerRefactoredManyToMany {
     arg.removeCustomer(this);
   }
 }
-
-

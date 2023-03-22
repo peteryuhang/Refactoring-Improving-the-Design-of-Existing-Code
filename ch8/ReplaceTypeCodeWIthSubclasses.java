@@ -43,7 +43,8 @@ class EmployeeRefactored {
     return _type;
   }
 
-  public EmployeeRefactored() {}
+  public EmployeeRefactored() {
+  }
 
   private EmployeeRefactored(int type) {
     _type = type;

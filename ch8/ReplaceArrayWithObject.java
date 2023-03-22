@@ -1,6 +1,5 @@
 package ch8;
 
-
 /* 
  * You have an array in which certain elements mean different things
  * 
@@ -14,7 +13,6 @@ class ReplaceArrayWithObject {
     row[1] = 15;
   }
 }
-
 
 class Performance {
   private String _name = "";

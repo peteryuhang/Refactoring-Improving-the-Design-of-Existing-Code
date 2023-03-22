@@ -1,6 +1,5 @@
 package ch6;
 
-
 /* 
  * You are using a temp variable to hold the result of an expression
  * 

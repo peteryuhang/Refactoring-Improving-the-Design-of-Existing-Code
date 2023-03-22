@@ -22,9 +22,11 @@ class Order {
 
   // modifier of the controlling side
   public void setCustomer(Customer arg) {
-    if (_customer != null) _customer.friendOrders().remove(this);
+    if (_customer != null)
+      _customer.friendOrders().remove(this);
     _customer = arg;
-    if (_customer != null) _customer.friendOrders().add(this);
+    if (_customer != null)
+      _customer.friendOrders().add(this);
   }
 
   public getDiscountedPrice() {
@@ -55,9 +57,10 @@ class Customer {
 class OrderRefactored {
   public CustomerRefactored getCustomer() {
     Iterator iter = CustomerRefactored.getInstances().iterator();
-    while(iter.hasNext()) {
-      CustomerRefactored each = (CustomerRefactored)iter.next();
-      if(each.containsOrder(this)) return each;
+    while (iter.hasNext()) {
+      CustomerRefactored each = (CustomerRefactored) iter.next();
+      if (each.containsOrder(this))
+        return each;
     }
     return null;
   }
@@ -86,4 +89,3 @@ class CustomerRefactored {
     return order.getDiscountedPrice(this);
   }
 }
-

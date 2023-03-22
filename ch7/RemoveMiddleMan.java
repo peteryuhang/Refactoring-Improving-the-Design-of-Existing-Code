@@ -1,6 +1,5 @@
 package ch7;
 
-
 /* 
  * A class is doing too much simple delegation
  * 
@@ -22,7 +21,7 @@ class Department {
   private String _chargeCode;
   private Person _manager;
 
-  public Department (Person manager) {
+  public Department(Person manager) {
     _manager = manager;
   }
 
@@ -33,7 +32,7 @@ class Department {
 
 class PersonRefactored {
   Department _department;
-  
+
   public Department getDepartment() {
     return _department;
   }

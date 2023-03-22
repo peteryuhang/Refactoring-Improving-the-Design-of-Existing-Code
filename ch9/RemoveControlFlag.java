@@ -1,6 +1,5 @@
 package ch9;
 
-
 /* 
  * You have a variable that is acting as a control flag for a series of boolean expressions
  * 

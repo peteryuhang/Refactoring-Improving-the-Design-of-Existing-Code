@@ -26,12 +26,11 @@ class Person {
   public void setBloodGroup(int arg) {
     _bloodGroup = arg;
   }
-  
+
   public int getBloodGroup() {
     return _bloodGroup;
   }
 }
-
 
 class PersonRefactored {
   private BloodGroup _bloodGroup;
@@ -55,13 +54,13 @@ class BloodGroup {
   public static final BloodGroup B = new BloodGroup(2);
   public static final BloodGroup AB = new BloodGroup(3);
 
-  private static final BloodGroup[] _groups = {O, A, B, AB};
+  private static final BloodGroup[] _groups = { O, A, B, AB };
   private final int _code;
 
   public BloodGroup(int arg) {
     _code = arg;
   }
-  
+
   public int getCode() {
     return _code;
   }

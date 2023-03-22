@@ -1,6 +1,5 @@
 package ch6;
 
-
 /* 
  * You have a temp that is assigned to once with a simple expression,
  * and the temp is getting in the way of other refactorings

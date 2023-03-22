@@ -29,6 +29,7 @@ class TempRange {
   int getLow() {
     // ...
   }
+
   int getHigh() {
     // ...
   }
@@ -52,6 +53,7 @@ class TempRangeRefactored {
   int getLow() {
     // ...
   }
+
   int getHigh() {
     // ...
   }

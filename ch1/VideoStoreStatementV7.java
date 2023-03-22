@@ -4,7 +4,6 @@
  *     Temporary variable can be a problem with long, complex routines
  */
 
-
 package ch1;
 
 import java.util.Enumeration;

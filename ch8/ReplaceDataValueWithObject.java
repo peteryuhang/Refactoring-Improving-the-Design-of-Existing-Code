@@ -1,6 +1,5 @@
 package ch8;
 
-
 /* 
  * You have a data item that needs additional data or behavior
  * 
@@ -26,6 +25,7 @@ class Order {
 
 class Customer {
   private final String _name;
+
   public Customer(String name) {
     _name = name;
   }
@@ -47,7 +47,8 @@ class OrderRefactored {
   }
 
   // each order has its own customer
-  // as a rule value object should be immutable, this avoids some nasty aliasing bugs
+  // as a rule value object should be immutable, this avoids some nasty aliasing
+  // bugs
   public void setCustomer(String customerName) {
     _customer = new Customer(customerName);
   }

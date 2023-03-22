@@ -80,7 +80,7 @@ class Customer {
 class clientRefactored {
   public void clientLogic(Site site) {
     CustomerRefactored customer = site.getCustomer();
-    
+
     BillingPlan plan = customer.getPlan();
 
     String customerName = customer.getName();
@@ -156,13 +156,13 @@ class NullPaymentHistory extends PaymentHistoryRefactored {
   }
 }
 
-
-
-// Testing Interface (Make the null object possible when no access to the source code)
+// Testing Interface (Make the null object possible when no access to the source
+// code)
 
 // interface Null {}
 
 // class NullCustomer extends Customer implements Null ...
 
-// test for nullness with the instanceof operator, after this check, can safely use method defined in Null interface
+// test for nullness with the instanceof operator, after this check, can safely
+// use method defined in Null interface
 // aCustomer instanceof Null

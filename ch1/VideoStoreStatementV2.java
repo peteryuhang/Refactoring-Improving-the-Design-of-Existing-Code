@@ -4,7 +4,6 @@
  *    Decomposing some parts of statement method
  */
 
-
 package ch1;
 
 import java.util.Enumeration;

@@ -39,6 +39,8 @@ class EmployeeRefactored {
   static final int SALESMAN = 1;
   static final int MANAGER = 2;
 
+  private int _type;
+
   public int getType() {
     return _type;
   }

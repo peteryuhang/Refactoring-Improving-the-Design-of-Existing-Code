@@ -84,5 +84,37 @@ class ClientRefactored2 {
   }
 }
 
+// checked exception - if the withdraw method been used by tons of callers,
+// it is not easy to do it in one step, can create a new method to change step by step
+class AccountRefactored3 {
+  private int _balance;
+
+  public int withdraw(int amount) {
+    try {
+      newWithdraw(amount);
+      return 0;
+    } catch (BalanceException e) {
+      return -1;
+    }
+  }
+
+  public void newWithdraw(int amount) throws BalanceException {
+    if (amount > _balance)
+      throw new BalanceException();
+    _balance -= amount;
+  }
+}
+
+class ClientRefactored3 {
+  public void client() {
+    try {
+      account.newWithdraw(amount);
+      doTheUsualThing();
+    } catch (BalanceException e) {
+      handleOverdrawn();
+    }
+  }
+}
+
 class BalanceException extends Exception {
 }

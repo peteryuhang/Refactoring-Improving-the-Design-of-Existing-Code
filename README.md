@@ -81,3 +81,13 @@ The code might not be executed, the main purpose is to interpret the theory of r
 - [Encapsulate Downcast](./ch10/EncapsulateDowncast.java)
 - [Replace Error Code with Exception](./ch10/ReplaceErrorCodeWithException.java)
 - [Replace Exception with Test](./ch10/ReplaceExceptionWithTest.java)
+
+### Dealing with Generalization
+
+- [Pull Up Field](./ch11/PullUpField.java)
+- [Pull Up Method](./ch11/PullUpMethod.java)
+- [Pull Up Constructor Body](./ch11/PullUpConstructorBody.java)
+- [Push Down Method](./ch11/PushDownMethod.java)
+- [Push Down Field](./ch11/PushDownField.java)
+- [Extract Subclass](./ch11/ExtractSubclass.java)
+- [Extract Superclass](./ch11/ExtractSuperclass.java)

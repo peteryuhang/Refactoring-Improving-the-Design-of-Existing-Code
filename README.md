@@ -91,3 +91,5 @@ The code might not be executed, the main purpose is to interpret the theory of r
 - [Push Down Field](./ch11/PushDownField.java)
 - [Extract Subclass](./ch11/ExtractSubclass.java)
 - [Extract Superclass](./ch11/ExtractSuperclass.java)
+- [Extract Interface](./ch11/ExtractInterface.java)
+- [Collapse Hierarchy](./ch11/CollapseHierarchy.java)

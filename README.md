@@ -93,3 +93,6 @@ The code might not be executed, the main purpose is to interpret the theory of r
 - [Extract Superclass](./ch11/ExtractSuperclass.java)
 - [Extract Interface](./ch11/ExtractInterface.java)
 - [Collapse Hierarchy](./ch11/CollapseHierarchy.java)
+- [Form Template Method](./ch11/FormTemplateMethod.java)
+- [Replace Inheritance with Delegation](./ch11/ReplaceInheritanceWithDelegation.java)
+- [Replace Delegation with Inheritance](./ch11/ReplaceDelegationWithInheritance.java)

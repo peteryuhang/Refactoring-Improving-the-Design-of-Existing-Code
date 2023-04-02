@@ -96,3 +96,8 @@ The code might not be executed, the main purpose is to interpret the theory of r
 - [Form Template Method](./ch11/FormTemplateMethod.java)
 - [Replace Inheritance with Delegation](./ch11/ReplaceInheritanceWithDelegation.java)
 - [Replace Delegation with Inheritance](./ch11/ReplaceDelegationWithInheritance.java)
+
+### Big Refactorings
+
+- [Tease Apart Inheritance](./ch12/TeaseApartInheritance.md)
+- [Convert Procedural Design to Objects](./ch12/ConvertProceduralDesignToObjects.md)

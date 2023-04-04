@@ -101,3 +101,5 @@ The code might not be executed, the main purpose is to interpret the theory of r
 
 - [Tease Apart Inheritance](./ch12/TeaseApartInheritance.md)
 - [Convert Procedural Design to Objects](./ch12/ConvertProceduralDesignToObjects.md)
+- [Separate Domain from Presentation](./ch12/SeparateDomainFromPresentation.md)
+- [Extract Hierarchy](./ch12/ExtractHierarchy.md)

@@ -1,17 +1,40 @@
 ## Duplicated Code
 - If you see the same code structure in more than one place, you can be sure that you program <br>
   will be better if you find a way unify them
+- **Related Refactoring**:
+  - When you have the same expression in two methods of the same class: [Extract Method](../ch6/ExtractMethod.java)
+  - When you have the same expression in two sibling subclass: [Extract Method](../ch6/ExtractMethod.java) + [Pull Up Method](../ch11/PullUpMethod.java) or can consider [Form Template Method](../ch11/FormTemplateMethod.java) and [Substitute Algorithm](../ch6/SubstituteAlgorithm.java)
+  - If you have duplicated code in two unrelated classes: [Extract Class](../ch7/ExtractClass.java)
 
 ## Long Method
 - Smaller method is good naming
 - When we need to comment code, better consider to make these code into a new method with naming <br>
   based on the comment
+- **Related Refactoring**:
+  - First can consider about [Extract Method](../ch6/ExtractMethod.java)
+  - If you have the method with lots of parameters and temporary variables, can consider
+    - [Replace Temp with Query](../ch6/ReplaceTempWithQuery.java)
+    - [Introduce Parameter Object](../ch10/IntroduceParameterObject.java)
+    - [Preserve Whole Object](../ch10/PreserveWholeObject.java)
+    - [Replace Method with Method Object](../ch6/ReplaceMethodWithMethodObject.java)
+  - If you have complex conditional expression in method:
+    - [Decompose Conditional](../ch9/DecomposeConditional.java)
 
 ## Large Class
 - Class is trying to do too much, it often shows up as too many instance variables
+- **Related Refactoring**:
+  - If class does not use all of its instance variables all of the time, can consider:
+    - [Extract Class](../ch7/ExtractClass.java)
+    - [Extract Subclass](../ch11/ExtractSubclass.java)
+  - [Extract Interface](../ch11/ExtractInterface.java) can give you ideas on how you can further break up the class
+  - If the large class is GUI class, then you need to consider [Duplicate Observed Data](../ch8/DuplicateObservedData.java) for keeping data in sync
 
 ## Long Parameter List
 - Long parameter list are hard to understand, it can be resolved by passing object
+- **Related Refactoring**:
+  - If you can get the data in one parameter by making a request of an object you already know about, can consider [Replace Parameter with Method](../ch10/ReplaceParameterWithMethod.java)
+  - If multiple parameter gleaned from an object, then consider [Preserve Whole Object](../ch10/PreserveWholeObject.java)
+  - If you have several data items with no logical object, use [Introduce Parameter Object](../ch10/IntroduceParameterObject.java)
 
 ## Divergent Change
 - Occurs when one class is commonly changed in different ways for different reasons

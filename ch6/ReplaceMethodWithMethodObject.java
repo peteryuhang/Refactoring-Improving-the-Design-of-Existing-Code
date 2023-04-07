@@ -8,7 +8,7 @@ package ch6;
  * fields on that object. You can then decompose that method into other methods
  * on the same object
  */
-public class ReplaceMethodWithMethodObject {
+class Account {
   int gamma(int inputVal, int quantity, int yearToDate) {
     int importantValue1 = (inputVal * quantity) + delta();
     int importantValue2 = (inputVal * quantity) + 100;
@@ -20,12 +20,12 @@ public class ReplaceMethodWithMethodObject {
   }
 
   int gammaRefactored(int inputVal, int quantity, int yearToDate) {
-    return new ReplaceMethodWithMethodObjectRefactored(this, inputVal, quantity, yearToDate).compute();
+    return new Gamma(this, inputVal, quantity, yearToDate).compute();
   }
 }
 
-class ReplaceMethodWithMethodObjectRefactored {
-  private final ReplaceMethodWithMethodObject _account;
+class Gamma {
+  private final Account _account;
   private int inputVal;
   private int quantity;
   private int yearToDate;
@@ -33,7 +33,7 @@ class ReplaceMethodWithMethodObjectRefactored {
   private int importantValue2;
   private int importantValue3;
 
-  ReplaceMethodWithMethodObjectRefactored(ReplaceMethodWithMethodObject source, int inputValArg, int quantityArg,
+  Gamma(Account source, int inputValArg, int quantityArg,
       int yearToDateArg) {
     _account = source;
     inputVal = inputValArg;

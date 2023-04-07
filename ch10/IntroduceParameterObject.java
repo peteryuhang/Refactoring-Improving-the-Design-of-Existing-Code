@@ -56,24 +56,6 @@ class Client {
   }
 }
 
-class EntryRefactored {
-  private Date _chargeDate;
-  private double _value;
-
-  Entry(double value, Date chargeDate) {
-    _value = value;
-    _chargeDate = chargeDate;
-  }
-
-  public Date getDate() {
-    return _chargeDate;
-  }
-
-  public double getValue() {
-    return _value;
-  }
-}
-
 class AccountRefactored {
   private Vector _entries = new Vector();
 

@@ -38,21 +38,40 @@
 
 ## Divergent Change
 - Occurs when one class is commonly changed in different ways for different reasons
+- **Related Refactoring**:
+  - Each object is changed only as a result of one kind of change, use [Extract Class](../ch7/ExtractClass.java) to separate them
 
 ## Shotgun Surgey
 - Similar to divergent change but is the opposite. Everytime you make a kind of change, <br>
   you have to make a lot of little changes to a lot of different classes
+- **Related Refactoring**:
+  - Use [Move Method](../ch7/MoveMethod.java) and [Move Field](../ch7/MoveField.java) to put all the change into a single class. If no current class looks like a good candidate, create one
+  - Use [Inline Class](../ch7/InlineClass.java) to bring a whole bunch of bahavior together
 
 ## Feature Envy
 - A method that seems more interested in a class other than one it actually is in
 - Put things together that change together
+- **Related Refactoring**:
+  - Use [Move Method](../ch7/MoveMethod.java) to put things in the correct place
+  - Sometime only part of the method suffers from envy; in that case use [Extract Method](../ch6/ExtractMethod.java) first
 
 ## Data Clumps
 - Bunches of data that hang around together really ought to be made into their own object
+- **Related Refactoring**:
+  - The first step is to look for where the clumps appear as fields. Use [Extract Class](../ch7/ExtractClass.java) on the fields to turn the clumps into an object
+  - Then turn you attention to method signatures using [Introduce Parameter Object](../ch10/IntroduceParameterObject.java) or [Preserve Whole Object](../ch10/PreserveWholeObject.java) to slim them down
 
 ## Primitive Obsession
 - One of the valuable things about objects is that they blur or even break the line between <br>
   primitive and larger classes
+- **Related Refactoring**:
+  - Apply [Replace Data Value with Object](../ch8/ReplaceDataValueWithObject.java) on individual data values
+  - If the data value is type code
+    - Use [Replace Type Code with Class](../ch8/ReplaceTypeCodeWithClass.java) if the value does not affect behavior
+    - Use [Replace Type Code with Subclasses](../ch8/ReplaceTypeCodeWIthSubclasses.java) or [Replace Type Code with State/Strategy](../ch8/ReplaceTypeCodeWithStateOrStrategy.java) if you have conditionals that depend on the type code
+  - If you have a group of fields that should go together, use [Extract Class](../ch7/ExtractClass.java)
+  - If you see these primitives in parameter lists, try a civilizing dose of [Introduce Parameter Object](../ch10/IntroduceParameterObject.java)
+  - If you find youself picking apart an array, use [Replace Array with Object](../ch8/ReplaceArrayWithObject.java)
 
 ## Switch Statement
 - The problem with switch statement is essentially that of duplication

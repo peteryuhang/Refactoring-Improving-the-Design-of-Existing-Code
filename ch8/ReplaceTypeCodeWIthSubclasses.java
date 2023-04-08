@@ -45,7 +45,7 @@ class EmployeeRefactored {
     return _type;
   }
 
-  public EmployeeRefactored() {
+  EmployeeRefactored() {
   }
 
   private EmployeeRefactored(int type) {

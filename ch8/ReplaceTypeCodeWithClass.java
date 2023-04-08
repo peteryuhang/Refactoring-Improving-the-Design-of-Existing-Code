@@ -19,7 +19,7 @@ class Person {
 
   private int _bloodGroup;
 
-  public Person(int bloodGroup) {
+  Person(int bloodGroup) {
     _bloodGroup = bloodGroup;
   }
 
@@ -35,7 +35,7 @@ class Person {
 class PersonRefactored {
   private BloodGroup _bloodGroup;
 
-  public PersonRefactored(BloodGroup arg) {
+  PersonRefactored(BloodGroup arg) {
     _bloodGroup = arg;
   }
 

@@ -38,16 +38,18 @@ class Employee {
 class EmployeeRefactored {
   private EmployeeType _type;
 
-  Employee(int type) {
-    _type = type;
+  Employee(int code) {
+    _type = EmployeeType.newType(code);
   }
 
   public int getType() {
-    return _type;
+    return _type.getTypeCode();
   }
 
-  public void setType(int arg) {
-    _type = EmployeeType.newType(arg);
+  // the value of type code allowed to change, which is different from
+  // ReplaceTypeCodeWithSubclasses refatoring
+  public void setType(int code) {
+    _type = EmployeeType.newType(code);
   }
 
   public int payAmount() {
@@ -72,7 +74,7 @@ abstract class EmployeeType {
   abstract int getTypeCode();
 
   static EmployeeType newType(int code) {
-    switch (getType()) {
+    switch (code) {
       case ENGINEER:
         return new Engineer();
       case SALESMAN:

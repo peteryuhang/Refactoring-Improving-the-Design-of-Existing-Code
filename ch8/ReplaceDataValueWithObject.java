@@ -5,12 +5,11 @@ package ch8;
  * 
  * Turn the data item into an object
  * 
- *  
  */
 class Order {
   private String _customer;
 
-  public Order(String customer) {
+  Order(String customer) {
     _customer = customer;
   }
 
@@ -23,22 +22,10 @@ class Order {
   }
 }
 
-class Customer {
-  private final String _name;
-
-  public Customer(String name) {
-    _name = name;
-  }
-
-  public String getName() {
-    return _name;
-  }
-}
-
 class OrderRefactored {
   private Customer _customer;
 
-  public Order(String customerName) {
+  OrderRefactored(String customerName) {
     _customer = new Customer(customerName);
   }
 
@@ -47,9 +34,21 @@ class OrderRefactored {
   }
 
   // each order has its own customer
-  // as a rule value object should be immutable, this avoids some nasty aliasing
-  // bugs
+  // as a rule value object should be immutable
+  // this avoids some nasty aliasing bugs
   public void setCustomer(String customerName) {
     _customer = new Customer(customerName);
+  }
+}
+
+class Customer {
+  private final String _name;
+
+  Customer(String name) {
+    _name = name;
+  }
+
+  public String getName() {
+    return _name;
   }
 }

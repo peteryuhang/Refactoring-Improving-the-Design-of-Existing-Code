@@ -17,7 +17,7 @@ package ch7;
  * - If not sure whether to move a method, then go on to look at other methods.
  *   Moving other methods often makes the decision easier
  */
-public class MoveMethod {
+class Account {
   private AccountType _type;
   private int _daysOverdrawn;
 
@@ -44,7 +44,7 @@ class AccountType {
 }
 
 // do this refactor to resolve multiple accountType with different behavior
-class MoveMethodRefactored {
+class AccountRefactored {
   private AccountTypeRefactored _type;
   private int _daysOverdrawn;
 

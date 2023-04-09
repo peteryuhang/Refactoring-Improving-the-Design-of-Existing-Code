@@ -9,7 +9,6 @@ package ch9;
  *   and then invoking some behavior based on the answer, you just invoke the behavior.
  *   The object, depending on its type, does the right thing.
  */
-
 class client {
   public void clientLogic(Site site) {
     Customer customer = site.getCustomer();
@@ -58,20 +57,6 @@ class Customer {
 
 class PaymentHistory {
   public int getWeeksDelinquentInLastYear() {
-    // ...
-  }
-}
-
-class Customer {
-  public String getName() {
-    // ...
-  }
-
-  public BillingPlan getPlan() {
-    // ...
-  }
-
-  public PaymentHistory getHistory() {
     // ...
   }
 }

@@ -52,7 +52,7 @@ class EmployeeRefactored {
   }
 
   public int getType() {
-    return _type;
+    return _type.getTypeCode();
   }
 
   public int payAmount() {

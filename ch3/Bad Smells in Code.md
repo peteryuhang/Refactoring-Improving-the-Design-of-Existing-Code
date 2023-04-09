@@ -75,18 +75,33 @@
 
 ## Switch Statement
 - The problem with switch statement is essentially that of duplication
+- **Related Refactoring**:
+  - Use [Extract Method](../ch6/ExtractMethod.java) to extract the switch statement and then [Move Method](../ch7/MoveMethod.java) to get it into the class where polymorphism is needed
+  - Consider to use [Replace Type Code with Subclasses](../ch8/ReplaceTypeCodeWithSubclasses.java) or [Replace Type Code with State/Strategy](../ch8/ReplaceTypeCodeWithStateOrStrategy.java)
+  - When you have set up the inheritance structure, you can use [Replace Conditional with Polymorphism](../ch9/ReplaceConditionalWithPolymorphism.java)
+  - If you only have a few cases that affect a single method, and you don't expect them to change, then polymorphism is overkill. Can consider use [Replace Parameter with Explicit Methods](../ch10/ReplaceParameterWithExplicitMethods.java)
+  - If one of your conditional cases is a null, try [Introduce Null Object](../ch9/IntroduceNullObject.java)
 
 ## Parallel Inheritance Hierarchies
 - A special case of shotgun surgery, every time you make a subclass of one class, you also have to<br>
   make a subclass of another
-- The general strategy for eliminating the duplication is to make sure that instance of one hierarchy<br>
-  refer to instances of the other
+- The general strategy for eliminating the duplication is to **make sure that instance of one hierarchy refer to instances of the other**
+- **Related Refactoring**:
+  - Consider use [Move Method](../ch7/MoveMethod.java) and [Move Field](../ch7/MoveField.java) to make the referring class disappear
 
 ## Lazy class
 - A class that isn't doing enough to pay for itself should be eliminated
+- **Related Refactoring**:
+  - For subclasses that aren't doing enough, try to use [Collapse Hierarchy](../ch11/CollapseHierarchy.java)
+  - Nearly useless components should be subjected to [Inline Class](../ch7/InlineClass.java)
 
 ## Speculative Generality
 - It can be spotted when the only users of a method or class are test cases
+- **Related Refactoring**:
+  - If you have abstract classes that aren't doing much, use [Collapse Hierarchy](../ch11/CollapseHierarchy.java)
+  - Unnecessary delegation can be removed with [Inline Class](../ch7/InlineClass.java)
+  - Method with unused parameters should be subject to [Remove Parameter](../ch10/RemoveParameter.java)
+  - Method named with odd abstract names should be brought down to earth with [Rename Method](../ch10/RenameMethod.java)
 
 ## Temporary Field
 - Object with an instance variable is set only in certain circumstances

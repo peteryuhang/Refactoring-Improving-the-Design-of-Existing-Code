@@ -10,7 +10,7 @@ package ch7;
  *   the change easier to make
  */
 class Person {
-  Department _department;
+  private Department _department;
 
   public Department getDepartment() {
     return _department;
@@ -35,7 +35,7 @@ class Department {
 }
 
 class PersonRefactored {
-  Department _department;
+  private Department _department;
 
   public Department getDepartment() {
     return _department;
@@ -47,18 +47,5 @@ class PersonRefactored {
 
   public Person getManager() {
     return _department.getManager();
-  }
-}
-
-class Department {
-  private String _chargeCode;
-  private Person _manager;
-
-  public Department(Person manager) {
-    _manager = manager;
-  }
-
-  public Person getManager() {
-    return _manager;
   }
 }

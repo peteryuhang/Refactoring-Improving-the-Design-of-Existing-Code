@@ -105,15 +105,31 @@
 
 ## Temporary Field
 - Object with an instance variable is set only in certain circumstances
+- **Related Refactoring**:
+  - Use [Extract Class](../ch7/ExtractClass.java) to create a home for the poor orphan variables.
+  - Can consider to eliminate conditional code by using [Introduce Null Object](../ch9/IntroduceNullObject.java)
 
 ## Message Chains
 - Client is coupled to the structure of the navigation
+- **Related Refactoring**:
+  - Can consider do [Hide Delegate](../ch7/HideDelegate.java) at various points in the chain
+  - [Hide Delegate](../ch7/HideDelegate.java) often turns every intermediate object into a middle man. Better to see what the resulting object is used for. See whether you can use [Extract Method](../ch6/ExtractMethod.java) to take piece of the code that uses it and then [Move Method](../ch7/MoveMethod.java) to push it down the chain
 
 ## Middle Man
 - You look at a class's interface and find half the methods are delegating to this other class
+- **Related Refactoring**:
+  - Consider to use [Remove Middle Man](../ch7/RemoveMiddleMan.java) and talk to the object that really knows what's going on
+  - If only a few methods aren't doing much, use [Inline Method](../ch6/InlineMethod.java) to inline them into the caller
+  - If there is additional behavior, you can use [Replace Delegation with Inheritance](../ch11/ReplaceDelegationWithInheritance.java) to turn the middle man into a subclass of the real object
 
 ## Inappropriate Intimacy
 - Sometimes classes become far too intimate and spend too much time delving in each others' private parts
+- **Related Refactoring**:
+  - Use [Move Method](../ch7/MoveMethod.java) and [Move Field](../ch7/MoveField.java) to separate the pieces to reduce the intimacy
+  - See whether you can arrange a [Change Bidirectional Association to Unidirectional](../ch8/ChangeBidirectionalAssociationToUnidirectional.java)
+  - If the class do have common interests, use [Extract Class](../ch7/ExtractClass.java) to put the commonality in a safe place and make honest classes of them
+  - Or use [Hide Delegate](../ch7/HideDelegate.java) to let another act as go-between
+  - Inheritance often can lead to overintimacy, can apply [Replace Inheritance with Delegation](../ch11/ReplaceInheritanceWithDelegation.java) for this
 
 ## Alternative Classes with Different Interfaces
 - Any methods or classes that do the same thing but have different signatures for what they do

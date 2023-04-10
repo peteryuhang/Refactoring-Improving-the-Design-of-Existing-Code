@@ -10,7 +10,7 @@ package ch7;
  *   when the number is large and delegate frequently onboard new feature, the middle man is not necessary
  */
 class Person {
-  Department _department;
+  private Department _department;
 
   public Person getManager() {
     return _department.getManager();
@@ -31,7 +31,7 @@ class Department {
 }
 
 class PersonRefactored {
-  Department _department;
+  private Department _department;
 
   public Department getDepartment() {
     return _department;

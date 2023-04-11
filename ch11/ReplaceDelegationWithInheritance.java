@@ -20,7 +20,7 @@ package ch11;
  * RemoveMiddleMan, ExtractSuperclass, or ExtractInterface
  */
 class Employee {
-  Person _person = new Person();
+  private Person _person = new Person();
 
   public String getName() {
     return _person.getName();
@@ -36,7 +36,7 @@ class Employee {
 }
 
 class Person {
-  String _name;
+  private String _name;
 
   public String getName() {
     return _name;

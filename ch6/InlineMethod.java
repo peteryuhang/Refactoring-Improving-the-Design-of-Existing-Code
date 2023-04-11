@@ -6,7 +6,7 @@ package ch6;
  * 
  * - Another time to use inline method is when you have a group of methods that seems badly factored.
  *   You can inline them all into one big method and then reextract the methods
- * - Don't inline if subclass override the methodl they cannot override a method that isn't there
+ * - Don't inline if subclass override the method, they cannot override a method that isn't there
  */
 public class InlineMethod {
   int getRating() {

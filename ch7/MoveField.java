@@ -6,7 +6,6 @@ package ch7;
  * 
  * Create a new field in the target class, and change all its users
  * 
- * 
  */
 class Account {
   private AccountType _type;

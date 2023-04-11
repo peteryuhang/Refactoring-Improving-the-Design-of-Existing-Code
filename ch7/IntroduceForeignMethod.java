@@ -27,11 +27,11 @@ class IntroduceForeignMethod {
     return newStart;
   }
 
+  // foreign method, should be on Date class
   private static Date nextDay(Date arg) {
-    // foreign method, should be on Date
     return new Date(
-        previousEnd.getYear(),
-        previousEnd.getMonth(),
-        previousEnd.getDate() + 1);
+        arg.getYear(),
+        arg.getMonth(),
+        arg.getDate() + 1);
   }
 }

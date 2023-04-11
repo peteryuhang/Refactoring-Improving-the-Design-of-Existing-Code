@@ -13,7 +13,7 @@ class Employee {
   private String _id;
   private String _annualCost;
 
-  public Employee(String name, String id, int annualCost) {
+  Employee(String name, String id, int annualCost) {
     _name = name;
     _id = id;
     _annualCost = annualCost;
@@ -36,7 +36,7 @@ class Department {
   private String _name;
   private Vector _staff = new Vector();
 
-  public Department(String name) {
+  Department(String name) {
     _name = name;
   }
 
@@ -70,7 +70,7 @@ class Department {
 abstract class Party {
   private String _name;
 
-  public Party(String name) {
+  Party(String name) {
     _name = name;
   }
 
@@ -85,7 +85,7 @@ class EmployeeRefactored extends Party {
   private String _id;
   private String _annualCost;
 
-  public EmployeeRefactored(String name, String id, int annualCost) {
+  EmployeeRefactored(String name, String id, int annualCost) {
     super(name);
     _id = id;
     _annualCost = annualCost;
@@ -103,7 +103,7 @@ class EmployeeRefactored extends Party {
 class DepartmentRefactored extends Party {
   private Vector _staff = new Vector();
 
-  public DepartmentRefactored(String name) {
+  DepartmentRefactored(String name) {
     super(name);
   }
 

@@ -133,13 +133,24 @@
 
 ## Alternative Classes with Different Interfaces
 - Any methods or classes that do the same thing but have different signatures for what they do
+- **Related Refactoring**:
+  - Use [Rename Method](../ch10/RenameMethod.java) for methods that do the same thing but have different signatures
+  - Keep using [Move Method](../ch7/MoveMethod.java) to move behavior to the classes until the protocols are the same
+  - Can also consider [Extract Superclass](../ch11/ExtractSuperclass.java) in some situation
 
 ## Incomplete Libaray Class
-
+- Builders of library classes are rarely omniscient, and it is impossible to modify a libaray class to do something you'd like it to do
+- **Related Refactoring**:
+  - Use [Introduce Foreign Method](../ch7/IntroduceForeignMethod.java) if you wanna the libaray class to include couple of methods
+  - If there is a whole load of extra behavior, you need [Introduce Local Extension](../ch7/IntroduceLocalExtension.java)
 
 ## Data Class
-- Classes that have fields, getting and setting method for the fields, and nothing else <br>
-  and are almost certainly being manipulated in far too much detail by other classes
+- Classes that have fields, getting and setting method for the fields, and nothing else and are almost certainly being manipulated in far too much detail by other classes
+- **Related Refactoring**:
+  - If the class has public fields, you should immediately apply [Encapsulate Field](../ch8/EncapsulateField.java) before any notices
+  - If you have collection field, apply [Encapsulate Collection](../ch8/EncapsulateCollection.java) if they aren't properly encapsulated
+  - Use [Remove Setting Method](../ch10/RemoveSettingMethod.java) for any field that should not be changed
+  - Look for where the setter and getter methods are used by other classes. Try [Move Method](../ch7/MoveMethod.java) or [Extract Method](../ch6/ExtractMethod.java) to move the behavior into the data class. Then you can start using [Hide Method](../ch10/HideMethod.java) on the getter and setter
 
 ## Refused Bequest
 - Subclass sometime just need a few of methods and data of their parents

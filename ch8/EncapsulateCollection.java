@@ -13,11 +13,12 @@ import org.junit.Assert;
  * 
  * - The getter should not return the collection object itself, because that allows clients
  *   to manipulate the contents of the collection w/o the owning class's knowing what is going on
+ * 
  * - There should not be a setter for collection: rather there should be operations to add and
  *   remove elements. Or you can change the name of setter to initialize or replace
  */
 class Course {
-  public Course(String name, boolean isAdvanced) {
+  Course(String name, boolean isAdvanced) {
     // ...
   }
 
@@ -67,7 +68,7 @@ class Client {
 }
 
 class CourseRefactored {
-  public Course(String name, boolean isAdvanced) {
+  CourseRefactored(String name, boolean isAdvanced) {
     // ...
   }
 
@@ -101,7 +102,7 @@ class PersonRefactored {
     return _courses.size();
   }
 
-  public int numberOfAdvancedCOurses() {
+  public int numberOfAdvancedCourses() {
     Iterator<E> iter = getCourses().iterator();
     int count = 0;
     while (iter.hasNext()) {

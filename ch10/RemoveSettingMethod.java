@@ -11,7 +11,7 @@ package ch10;
 class Account1 {
   private String _id;
 
-  Account(String id) {
+  Account1(String id) {
     setId(id);
   }
 
@@ -23,7 +23,7 @@ class Account1 {
 class Account2 {
   private String _id;
 
-  Account(String id) {
+  Account2(String id) {
     setId(id);
   }
 
@@ -44,7 +44,7 @@ class InterestAccount extends Account1 {
 class Account1Refactored {
   private final String _id;
 
-  Account(String id) {
+  Account1Refactored(String id) {
     _id = id;
   }
 }
@@ -52,7 +52,7 @@ class Account1Refactored {
 class Account2Refactored {
   private final String _id;
 
-  Account(String id) {
+  Account2Refactored(String id) {
     initializeId(id);
   }
 
@@ -64,7 +64,7 @@ class Account2Refactored {
 class InterestAccountRefactored extends Account1Refactored {
   private double _interestRate;
 
-  InterestAccount(String id, double rate) {
+  InterestAccountRefactored(String id, double rate) {
     // super(id);  // best solution if it is possible
     initializeId(id); // if call supercalss not possible, well-named method is the best thing to use
     _interestRate = rate;

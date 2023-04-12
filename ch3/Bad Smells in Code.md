@@ -154,8 +154,15 @@
 
 ## Refused Bequest
 - Subclass sometime just need a few of methods and data of their parents
+- No need to do it all the time, unless it causing confusion and problems
+- **Related Refactoring**:
+  - If the subclass is reusing behavior but does not want to support the interface of the supperclass, can consider [Replace Inheritance with Delegation](../ch11/ReplaceInheritanceWithDelegation.java)
 
 ## Comments
-- When you feel the need to write a comment, first try to refactor the code so that any <br>
-  comment becomes superfluous
+- When you feel the need to write a comment, first try to refactor the code so that any comment becomes superfluous
 - A good time to use a comment is when you don't know what to do
+- A comment is a good place to say why you did something
+- **Related Refactoring**:
+  - If you need a comment to explain what a block of code does, try [Extract Method](../ch6/ExtractMethod.java)
+  - If the method alread extracted but still need a comment to explain what it does, use [Rename Method](../ch10/RenameMethod.java)
+  - If you need to state some rules about the required state of the system, use [Introduce Assertion](../ch9/IntroduceAssertion.java)

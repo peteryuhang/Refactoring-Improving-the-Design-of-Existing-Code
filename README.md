@@ -1,7 +1,7 @@
 # refactoring
 Note and code sample for reading Refactoring - Improving the design of existing code
 
-![](Screen%20Shot%202023-06-22%20at%2011.19.00%20AM.png)
+![](preface.png)
 
 The code might not be executed, the main purpose is to interpret the theory of refactoring
 
